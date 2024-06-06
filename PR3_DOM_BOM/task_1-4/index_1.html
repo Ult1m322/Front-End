@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--		<link rel="stylesheet" href="css/style.css">-->
+		<title>WEB development foundation. DOM</title>
+	</head>
+	<body>
+		<h1>
+			<span class="yellow">WEB development foundation.</span>
+		</h1>
+		<h3><span class="blue">Browser environment. Work with DOM.</span></h3>
+
+		<div class="lesson">
+			<div class="lesson__text"><span>Text</span></div>
+			<!-- Comments		 -->
+			 <ul name="list" class="lesson__list">
+				<li class="lesson__item-list lesson__item-list red">Topic 1</li>
+				<li id="listItem" class="lesson__item-list">Topic 2</li>
+				<li class="lesson__item-list">Topic 3
+					<ul class="lesson__sub-list">
+						<li class="lesson__item-sub-list"> Subtopic 1</li>
+						<li data-item="85" class="lesson__item-sub-list"> Subtopic 2</li>
+						<li class="lesson__item-sub-list"> Subtopic 3</li>
+					</ul>
+				</li>
+				<li class="lesson__item-list lesson__item-list blue">Topic 4</li>
+			</ul>
+		</div>
+
+		<div data_say_hi ="yes">Привет!</div>
+
+		<script>
+			var hi_variable = document.body.getAttribute('data_say_hi');
+
+			console.log(hi_variable);
+
+
+		</script>
+	</body>
+</html>
